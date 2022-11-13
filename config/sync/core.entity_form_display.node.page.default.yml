@@ -1,0 +1,122 @@
+uuid: 1b9c722f-8e41-41e3-8e51-83579cb7341f
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_text_block
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - field_layout
+    - layout_builder
+    - path
+    - publication_date
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_twocol_section
+    settings:
+      label: ''
+      column_widths: 67-33
+_core:
+  default_config_hash: SfpLhPExzvR0MgFp0Wp7CrmgEnhcqQ-fXIWFhbf4ue0
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 31
+    region: first
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  field_text_block:
+    type: text_textarea
+    weight: 121
+    region: first
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: first
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  published_at:
+    type: publication_date_timestamp
+    weight: 10
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: first
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: first
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  layout_builder__layout: true

@@ -1,0 +1,48 @@
+uuid: 6f80e7ff-b062-490c-a8d8-9d8a0e907378
+langcode: sv
+status: true
+dependencies:
+  module:
+    - block
+_core:
+  default_config_hash: ructO0IOsghR3CIbNd-0QfLTDiUo8gIJ7mB_nxSil4o
+id: block-layout
+label: 'Block Layout Page'
+module: block
+routes:
+  -
+    route_name: block.admin_display
+tips:
+  block-layout:
+    id: block-layout
+    plugin: text
+    label: 'Block Layout'
+    weight: 1
+    body: 'Blocks are boxes of content rendered into an area, or region, of a web page that can be displayed in regions (such as footer or sidebar) on your page.'
+  place-block:
+    id: place-block
+    plugin: text
+    label: 'Placera block'
+    weight: 2
+    selector: .button--small
+    body: 'Alla anpassade eller kontribuerade block kan läggas till i en viss region genom att klicka på knappen Placera block. Ett nytt block kan även skapas genom att klicka på Placera block'
+  block-region:
+    id: block-region
+    plugin: text
+    label: Blockregion
+    weight: 3
+    selector: .block-region-select
+    body: 'Assign or change the region of a block by clicking here. A dropdown list with all the regions will appear. You can place one block in multiple regions.'
+  configure-block:
+    id: configure-block
+    plugin: text
+    label: 'Konfigurera block'
+    weight: 4
+    selector: .dropbutton-widget
+    body: 'By Clicking on "Configure" you can go ahead and edit the contents of the block, deal with the visibility settings and even change the placement of where it is on your theme.'
+  custom-block-library:
+    id: custom-block-library
+    plugin: text
+    label: 'Anpassat blockbibliotek'
+    weight: 5
+    body: 'Blockhanteringssidan har också en annan flik som används för att lägga till anpassade block. Namnet på fliken är "Anpassat blockbibliotek". Den fliken ger en möjlighet att lägga till anpassade block.'

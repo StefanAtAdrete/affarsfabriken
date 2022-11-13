@@ -1,0 +1,141 @@
+uuid: e00a350d-f000-4c00-855f-811f149cde24
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_text_block
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          9553ef1c-6b71-4266-ad23-aa08edfcad5e:
+            uuid: 9553ef1c-6b71-4266-ad23-aa08edfcad5e
+            region: first
+            configuration:
+              id: 'field_block:node:page:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          1887cfaa-1ba9-4316-ae46-bbb441e2947c:
+            uuid: 1887cfaa-1ba9-4316-ae46-bbb441e2947c
+            region: second
+            configuration:
+              id: 'extra_field_block:node:page:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          e50d41fe-001a-47f5-a701-d72efc991237:
+            uuid: e50d41fe-001a-47f5-a701-d72efc991237
+            region: second
+            configuration:
+              id: 'field_block:node:page:field_text_block'
+              label: 'Text för visning i block'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          6e05ab77-c4d3-4793-9988-3376e31bb3b3:
+            uuid: 6e05ab77-c4d3-4793-9988-3376e31bb3b3
+            region: first
+            configuration:
+              id: 'field_block:node:page:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              component_attributes:
+                block_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_title_attributes:
+                  id: ''
+                  class: ''
+                  style: ''
+                  data: ''
+                block_content_attributes:
+                  id: ''
+                  class: h2
+                  style: ''
+                  data: ''
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  field_text_block:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  published_at: true

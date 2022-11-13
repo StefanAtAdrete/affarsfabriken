@@ -1,0 +1,15 @@
+uuid: e5b0e9ee-2d89-47a5-8e84-a7826c2f7c0f
+langcode: sv
+status: true
+dependencies: {  }
+id: production_config
+label: 'Production config'
+description: 'Importable configs for production without development modules.'
+weight: 0
+folder: prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

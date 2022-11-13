@@ -1,0 +1,26 @@
+uuid: 8ff52178-1196-442b-89f9-06b003a734cb
+langcode: sv
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: pZJnuQkh9afNML5IcMuKTUC__vmHMFn66Qr5IWtedZ4
+id: months
+label: Månader
+category: 'Date and time'
+likert: false
+options: |
+  January: January
+  February: February
+  March: March
+  April: April
+  May: May
+  June: June
+  July: July
+  August: August
+  September: September
+  October: October
+  November: November
+  December: December

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: sv
+uuid: 6efe4cce-77f3-4a8d-afae-64290066a0f5
+name: Affärsfabriken
+mail: info@affarsfabriken.se
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: sv

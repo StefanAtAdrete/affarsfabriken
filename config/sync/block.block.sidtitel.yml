@@ -1,0 +1,27 @@
+uuid: 43ed5a0d-90e4-4df1-bc87-e29ce45eb4bc
+langcode: sv
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - bootstrap_barrio_subtheme
+id: sidtitel
+theme: bootstrap_barrio_subtheme
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidtitel
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

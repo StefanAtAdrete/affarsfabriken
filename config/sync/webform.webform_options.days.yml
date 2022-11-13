@@ -1,0 +1,21 @@
+uuid: 4b996450-6918-4f47-be4e-3cc61f0b2100
+langcode: sv
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: YNrKbYrWWjeubUUM8AsQ19KnX7cU1elACR14CZJHmdg
+id: days
+label: Dagar
+category: 'Date and time'
+likert: false
+options: |
+  Sunday: Sunday
+  Monday: Monday
+  Tuesday: Tuesday
+  Wednesday: Wednesday
+  Thursday: Thursday
+  Friday: Friday
+  Saturday: Saturday

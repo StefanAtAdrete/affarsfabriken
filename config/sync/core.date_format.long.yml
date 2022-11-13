@@ -1,0 +1,10 @@
+uuid: 3d1e3b2f-19a1-4ffa-8dc0-3db10c6022c3
+langcode: sv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: og8sWXhBuHbLMw3CoiBEZjgqSyhFBFmcbUW_wLcfNbo
+id: long
+label: 'Förvalt långt datum'
+locked: false
+pattern: 'l, F j, Y - H:i'

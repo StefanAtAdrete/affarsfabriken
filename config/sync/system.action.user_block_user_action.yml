@@ -1,0 +1,13 @@
+uuid: 1337996f-da2b-4462-bd3f-8a90a50368e8
+langcode: sv
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: DyypzTfThX10FFQw-399qPfEbLLyrhXgQrKPVsmAoJ4
+id: user_block_user_action
+label: 'Spärra vald(a) användare'
+type: user
+plugin: user_block_user_action
+configuration: {  }

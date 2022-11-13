@@ -1,0 +1,22 @@
+uuid: c2c75bed-b227-4970-84bf-2d502be1e436
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bootstrap_barrio_content
+theme: bootstrap_barrio
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Huvudsakligt sidinnehåll'
+  label_display: '0'
+  provider: system
+visibility: {  }

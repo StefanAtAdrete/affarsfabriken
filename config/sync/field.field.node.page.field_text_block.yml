@@ -1,0 +1,21 @@
+uuid: 6dc0892b-2e68-42e8-ae6e-ac391ddfe202
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_block
+    - node.type.page
+  module:
+    - text
+id: node.page.field_text_block
+field_name: field_text_block
+entity_type: node
+bundle: page
+label: 'Text för visning i block'
+description: "Ska texten ha ett utdrag för att kunna visas som ett eget block?\r\nSkriv den här. Kan formateras med HTML."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

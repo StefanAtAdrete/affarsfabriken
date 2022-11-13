@@ -1,0 +1,14 @@
+uuid: 3e3fc4fe-12f4-4629-8c50-8104e0991a9c
+langcode: sv
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Mb_L3vE-0IBZH5s2rjpk2LNn0QHClQP9AARQdCmVLt4
+id: translations
+label: Översättningar
+category: Language
+likert: false
+options: ''

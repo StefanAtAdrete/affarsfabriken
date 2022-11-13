@@ -1,0 +1,32 @@
+uuid: 08bb679f-393e-410e-9e4b-8e2f80b3ab26
+langcode: sv
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_product
+    - contact
+    - exclude_node_title
+    - filter
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonym användare'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use exclude node title'
+  - 'use text format restricted_html'
+  - 'view commerce_product'
+  - 'view media'

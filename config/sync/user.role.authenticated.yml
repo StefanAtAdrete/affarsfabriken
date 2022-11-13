@@ -1,0 +1,42 @@
+uuid: 573f0778-0f23-411a-bda2-91f24191e80e
+langcode: sv
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - contact
+    - exclude_node_title
+    - filter
+    - matomo
+    - media
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
+id: authenticated
+label: 'Inloggad användare'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'opt-in or out of matomo tracking'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use exclude node title'
+  - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view own commerce_order'

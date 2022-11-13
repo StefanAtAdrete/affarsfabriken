@@ -1,0 +1,27 @@
+uuid: 9b4b0b0d-f596-4991-9dbb-00c0c6edb4ab
+langcode: sv
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
+id: bootstrap_barrio_subtheme_main_menu
+theme: bootstrap_barrio_subtheme
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Huvudmeny
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

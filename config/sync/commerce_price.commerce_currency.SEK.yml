@@ -1,0 +1,9 @@
+uuid: e62a7ea9-e414-40bf-91d0-1ad3468ed711
+langcode: sv
+status: true
+dependencies: {  }
+currencyCode: SEK
+name: 'svensk krona'
+numericCode: '752'
+symbol: kr
+fractionDigits: 2

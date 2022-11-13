@@ -1,0 +1,11 @@
+uuid: db36776e-e603-4ca6-90a7-45f73fbdbb84
+langcode: sv
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article
+target_entity_type_id: node
+target_bundle: article
+default_langcode: site_default
+language_alterable: false

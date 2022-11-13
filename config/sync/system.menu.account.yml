@@ -1,0 +1,10 @@
+uuid: fcc10c96-140a-4a97-bd0f-8e212b6930f7
+langcode: sv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
+id: account
+label: 'Meny för användarkonto'
+description: 'Länkar relaterade till det aktiva användarkontot'
+locked: true

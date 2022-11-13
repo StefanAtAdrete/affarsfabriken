@@ -1,0 +1,15 @@
+uuid: 6763deb6-bbb9-4953-ba3f-e0f30e71310e
+langcode: sv
+status: true
+dependencies:
+  module:
+    - commerce_order
+  enforced:
+    module:
+      - commerce_cart
+_core:
+  default_config_hash: BeqBf6Mm59Nebv4SsV0yvK5EspkCegPqvwnqwEBvEp0
+id: commerce_order_item.add_to_cart
+label: 'Lägg till i varukorg'
+targetEntityType: commerce_order_item
+cache: true

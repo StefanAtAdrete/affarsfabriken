@@ -1,0 +1,134 @@
+uuid: dc78c9aa-29af-49f2-a583-214f8afa65ba
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_media
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - comment
+    - field_layout
+    - layout_builder
+    - media_library
+    - path
+    - publication_date
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_twocol_section
+    settings:
+      label: ''
+      column_widths: 67-33
+_core:
+  default_config_hash: Pzq9mzrsfoPf775qgEU_SUbHSro9pv1ga-Euh1Ykd_k
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    region: first
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  comment:
+    type: comment_default
+    weight: 10
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 1
+    region: first
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_autocomplete_tags
+    weight: 3
+    region: first
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 4
+    region: first
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 8
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  published_at:
+    type: publication_date_timestamp
+    weight: 7
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 13
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 9
+    region: first
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: first
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: first
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 12
+    region: first
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

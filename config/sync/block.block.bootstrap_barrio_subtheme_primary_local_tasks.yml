@@ -1,0 +1,22 @@
+uuid: bad61664-f72d-4b44-ba33-fa881f29f7b5
+langcode: sv
+status: true
+dependencies:
+  theme:
+    - bootstrap_barrio_subtheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bootstrap_barrio_subtheme_primary_local_tasks
+theme: bootstrap_barrio_subtheme
+region: highlighted
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primära flikar'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

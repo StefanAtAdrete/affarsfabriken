@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: 0yJNd4uWv8TzhYEPQBDiApPL2e8ar88kBmQrzDjNCqc
+langcode: sv
+nid_list: {  }
+translation_sync: true
+search: false
+type: remove
+content_types:
+  article: all
+  page: all
+content_type_modes:
+  article:
+    - full
+    - teaser
+  page: {  }

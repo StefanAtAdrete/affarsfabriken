@@ -1,0 +1,12 @@
+uuid: 01348745-8e54-477c-8992-12544f6df8f2
+langcode: sv
+status: true
+dependencies:
+  module:
+    - taxonomy
+_core:
+  default_config_hash: '-PPKjsNQPvoIDjOuUAvlLocYD976MNjb9Zpgyz5_BWE'
+id: taxonomy_term.full
+label: 'Sida för taxonomitermer'
+targetEntityType: taxonomy_term
+cache: true

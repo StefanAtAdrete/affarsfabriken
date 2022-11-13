@@ -1,0 +1,49 @@
+uuid: 13a772ed-2e87-40a8-8a91-2933e0710e95
+langcode: sv
+status: true
+dependencies: {  }
+id: databas_backup_dev
+label: 'Databas backup dev'
+config:
+  namer:
+    filename: backup_dev
+    timestamp: true
+    timestamp_format: Y-m-d\TH-i-s
+  compressor:
+    compression: gzip
+  utils:
+    site_offline: false
+  metadata:
+    description: ''
+  db_exclude:
+    exclude_tables: {  }
+    nodata_tables:
+      cache_bootstrap: cache_bootstrap
+      cache_config: cache_config
+      cache_container: cache_container
+      cache_data: cache_data
+      cache_default: cache_default
+      cache_discovery: cache_discovery
+      cache_dynamic_page_cache: cache_dynamic_page_cache
+      cache_entity: cache_entity
+      cache_menu: cache_menu
+      cache_page: cache_page
+      cache_render: cache_render
+      cache_rest: cache_rest
+      cache_toolbar: cache_toolbar
+      sessions: sessions
+      watchdog: watchdog
+  private_files_exclude:
+    exclude_filepaths:
+      - backup_migrate
+  public_files_exclude:
+    exclude_filepaths:
+      - js
+      - css
+      - php
+      - styles
+      - 'config_*'
+      - .htaccess
+  encrypt:
+    encrypt: 1
+    encrypt_password: Kraken22
