@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+.node__title {
+  display: none;
+}
+
+.feed-icons {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+span a {
+  text-decoration: none;
+}
+
+#sidebar_second {
+  padding-top: 1%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+
+#navbar-main.afbgmenu {
+  background-color: #e6da9a;
+}
+
