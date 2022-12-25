@@ -46,6 +46,7 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4.6",
         "drupal/devel": "^4.1",
+        "drupal/drupal_slider": "^2.1",
         "drupal/entity_clone": "^1.0@beta",
         "drupal/environment_indicator": "^4.0",
         "drupal/exclude_node_title": "^1.3",
