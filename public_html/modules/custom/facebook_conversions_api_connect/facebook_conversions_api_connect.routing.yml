@@ -1,0 +1,7 @@
+facebook_conversions_api_connect.settings_form:
+  path: '/admin/config/system/facebook-conversions-api-connect'
+  defaults:
+    _title: 'Facebook Conversions API connect settings'
+    _form: 'Drupal\facebook_conversions_api_connect\Form\SettingsForm'
+  requirements:
+    _permission: 'administer facebook_conversions_api_connect configuration'

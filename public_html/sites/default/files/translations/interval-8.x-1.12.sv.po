@@ -1,0 +1,26 @@
+# Swedish translation of Interval Field (8.x-1.12)
+# Copyright (c) 2023 by the Swedish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Interval Field (8.x-1.12)\n"
+"POT-Creation-Date: 2023-05-15 00:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Date"
+msgstr "Datum"
+msgid "Plain"
+msgstr "Enkel"
+msgid "Period"
+msgstr "Period"
+msgid "Interval"
+msgstr "Intervall"
+msgid "Data"
+msgstr "Data"
+msgid "Field types"
+msgstr "Fälttyper"

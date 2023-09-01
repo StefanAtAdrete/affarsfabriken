@@ -1,0 +1,6 @@
+name: Facebook Conversions API connect
+type: module
+description: A module to send events to Facebook via the server if cothe cookie &quot;cookie_concent&quot; has the value of &quot;2&quot;.
+package: Marketing APIs
+core: 8.x
+core_version_requirement: ^8 || ^9

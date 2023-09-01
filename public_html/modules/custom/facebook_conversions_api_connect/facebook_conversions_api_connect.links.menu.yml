@@ -1,0 +1,6 @@
+facebook_conversions_api_connect.settings_form:
+  title: Facebook Conversions API connect
+  description: Configure Facebook Conversions API connect.
+  parent: system.admin_config_system
+  route_name: facebook_conversions_api_connect.settings_form
+  weight: 10

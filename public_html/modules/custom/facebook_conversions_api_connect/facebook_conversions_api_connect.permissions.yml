@@ -1,0 +1,4 @@
+administer facebook_conversions_api_connect configuration:
+  title: 'Administer facebook_conversions_api_connect configuration'
+  description: 'Optional description.'
+  restrict access: true

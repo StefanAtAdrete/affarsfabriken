@@ -30,3 +30,6 @@ span a {
   background-color: #e6da9a;
 }
 
+.node--view-mode-teaser {
+  border-bottom: 0px solid #d3d7d9;
+}
