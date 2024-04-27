@@ -1,0 +1,14 @@
+{
+    "name": "drupal/howlerjs",
+    "description": "howler.js is an audio library for the modern web.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "support": {
+        "issues": "https://drupal.org/project/issues/howlerjs",
+        "source": "https://drupal.org/project/howlerjs"
+    },
+    "require": {
+        "drupal/core": "^8.8 || ^9 || ^10"
+    },
+    "minimum-stability": "dev"
+}

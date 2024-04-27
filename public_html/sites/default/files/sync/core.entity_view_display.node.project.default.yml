@@ -1,0 +1,215 @@
+uuid: ee407495-9b34-4631-8bcc-a78b6d031166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.body
+    - field.field.node.project.field_background
+    - field.field.node.project.field_costs
+    - field.field.node.project.field_financial_summary
+    - field.field.node.project.field_log
+    - field.field.node.project.field_marketing_strategy
+    - field.field.node.project.field_pain_points
+    - node.type.project
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1f1021be-ecd6-4bef-9888-e6cb8b054462:
+            uuid: 1f1021be-ecd6-4bef-9888-e6cb8b054462
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          2ff86046-3c55-426d-a7c5-39fc3b940364:
+            uuid: 2ff86046-3c55-426d-a7c5-39fc3b940364
+            region: content
+            configuration:
+              id: 'field_block:node:project:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          4c8e5418-38c3-4eb2-ba59-3ce073be0985:
+            uuid: 4c8e5418-38c3-4eb2-ba59-3ce073be0985
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_log'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          a57c8858-9164-419d-8836-4360fafe56d0:
+            uuid: a57c8858-9164-419d-8836-4360fafe56d0
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          ed0fc7b6-61cf-4254-84cd-59674bfd7d7c:
+            uuid: ed0fc7b6-61cf-4254-84cd-59674bfd7d7c
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_marketing_strategy'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          ff2bcffb-0b98-47e2-b41f-92cd9e989aa0:
+            uuid: ff2bcffb-0b98-47e2-b41f-92cd9e989aa0
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_pain_points'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          f2d98fac-e2ba-4be8-9c6e-013fe92dea78:
+            uuid: f2d98fac-e2ba-4be8-9c6e-013fe92dea78
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_financial_summary'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          0112708b-d90a-4d51-ab02-38f96063c997:
+            uuid: 0112708b-d90a-4d51-ab02-38f96063c997
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_costs'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_background:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_costs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_financial_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_log:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_marketing_strategy:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_pain_points:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

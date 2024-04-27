@@ -1,0 +1,31 @@
+howler:
+  remote: https://github.com/goldfire/howler.js
+  version: 2.2.3
+  license:
+    name: MIT
+    url: https://github.com/goldfire/howler.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    //cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js: { type: external, minified: true }
+
+howler.core:
+  remote: https://github.com/goldfire/howler.js
+  version: 2.2.3
+  license:
+    name: MIT
+    url: https://github.com/goldfire/howler.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    //cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.core.min.js: { type: external, minified: true }
+
+howler.spatial:
+  remote: https://github.com/goldfire/howler.js
+  version: 2.2.3
+  license:
+    name: MIT
+    url: https://github.com/goldfire/howler.js/blob/master/LICENSE.md
+    gpl-compatible: true
+  js:
+    //cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.spatial.min.js: { type: external, minified: true }
+  dependencies:
+    - howlerjs/howler.core

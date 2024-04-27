@@ -1,0 +1,28 @@
+tiny_html_audio_player:
+  remote: https://github.com/Irubataru/tiny-html-audio-player
+  version: master
+  license:
+    name: MIT
+    url: https://github.com/Irubataru/tiny-html-audio-player/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    js/tinyPlayer.js: {}
+  css:
+    theme:
+      css/tinyPlayer.css: {}
+  dependencies:
+    - core/jquery
+    - howlerjs/howler
+
+fa_css:
+  remote: https://use.fontawesome.com/releases/v5.13.1/fontawesome-free-5.13.1-web.zip
+  version: 5.15.1
+  license:
+    name: CC BY 4.0
+    url: https://fontawesome.com/license
+    gpl-compatible: true
+  css:
+    theme:
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css: { type: external, minified: true }
+  dependencies:
+    - tiny_html_audio_player/tiny_html_audio_player

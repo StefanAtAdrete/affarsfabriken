@@ -1,0 +1,10 @@
+name: Howler.js
+description: Howler.js audio javascript library integration.
+package: Audio
+core_version_requirement: ^8 || ^9 || ^10
+type: module
+
+# Information added by Drupal.org packaging script on 2022-11-14
+version: '1.0.1'
+project: 'howlerjs'
+datestamp: 1668446916

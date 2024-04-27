@@ -1,0 +1,16 @@
+field.formatter.settings.tiny_html_audio_player:
+  type: mapping
+  label: 'Tiny HTML audio player display format settings'
+  mapping:
+    controls:
+      type: boolean
+      label: 'Show playback controls'
+    autoplay:
+      type: boolean
+      label: 'Autoplay'
+    loop:
+      type: boolean
+      label: 'Loop'
+    multiple_file_display_type:
+      type: string
+      label: 'Display of multiple files'

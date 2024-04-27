@@ -1,0 +1,12 @@
+name: tiny-player HTML audio player
+description: tiny-player HTML audio player.
+package: Fields
+core_version_requirement: ^9.3 || ^10
+type: module
+dependencies:
+  - howlerjs:howlerjs
+
+# Information added by Drupal.org packaging script on 2023-02-01
+version: '1.0.3'
+project: 'tiny_html_audio_player'
+datestamp: 1675268129

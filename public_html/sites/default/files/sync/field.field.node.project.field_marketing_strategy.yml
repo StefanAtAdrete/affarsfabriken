@@ -1,0 +1,24 @@
+uuid: 9845e207-98fe-46f0-9f78-5dd1ff65d594
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_marketing_strategy
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_marketing_strategy
+field_name: field_marketing_strategy
+entity_type: node
+bundle: project
+label: 'Marketing strategy'
+description: 'Have a updated marketing strateg and write down insights from previous marketing efforts here.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -1,0 +1,10 @@
+name: Media Contextual Cropping API
+type: module
+description: Provides API Element for Media Contextual Cropping.
+package: Media Contextual Cropping
+core_version_requirement: ^9.4 || ^10
+
+# Information added by Drupal.org packaging script on 2023-10-20
+version: '1.2.2'
+project: 'media_contextual_crop'
+datestamp: 1697792190

@@ -1,0 +1,24 @@
+uuid: 384ac68e-363e-42a2-891b-b17ffd8432b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_background
+field_name: field_background
+entity_type: node
+bundle: project
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

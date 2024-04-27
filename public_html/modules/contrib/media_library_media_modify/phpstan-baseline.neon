@@ -1,0 +1,33 @@
+parameters:
+	ignoreErrors:
+		-
+			message: """
+				#^Usage of deprecated trait Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceTestTrait in class Drupal\\\\Tests\\\\entity_reference_entity_modify\\\\FunctionalJavascript\\\\FormTest\\:
+				in drupal\\:10\\.2\\.0 and is removed from drupal\\:11\\.0\\.0\\. Use
+				   \\\\Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceFieldCreationTrait instead\\.$#
+			"""
+			count: 1
+			path: modules/entity_reference_entity_modify/tests/src/FunctionalJavascript/FormTest.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 1
+			path: src/MultipleUploadFormHandler.php
+
+		-
+			message: """
+				#^Usage of deprecated trait Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceTestTrait in class Drupal\\\\Tests\\\\media_library_media_modify\\\\FunctionalJavascript\\\\MediaLibraryMediaModifyCheckSelectedTest\\:
+				in drupal\\:10\\.2\\.0 and is removed from drupal\\:11\\.0\\.0\\. Use
+				   \\\\Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceFieldCreationTrait instead\\.$#
+			"""
+			count: 1
+			path: tests/src/FunctionalJavascript/MediaLibraryMediaModifyCheckSelectedTest.php
+
+		-
+			message: """
+				#^Usage of deprecated trait Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceTestTrait in class Drupal\\\\Tests\\\\media_library_media_modify\\\\FunctionalJavascript\\\\MediaLibraryMediaModifyEditLinkTest\\:
+				in drupal\\:10\\.2\\.0 and is removed from drupal\\:11\\.0\\.0\\. Use
+				   \\\\Drupal\\\\Tests\\\\field\\\\Traits\\\\EntityReferenceFieldCreationTrait instead\\.$#
+			"""
+			count: 1
+			path: tests/src/FunctionalJavascript/MediaLibraryMediaModifyEditLinkTest.php

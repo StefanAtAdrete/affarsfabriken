@@ -1,0 +1,23 @@
+uuid: e1bfdea4-7286-4c01-8fed-b0d80466e865
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cost_number
+    - paragraphs.paragraphs_type.project_costs
+id: paragraph.project_costs.field_cost_number
+field_name: field_cost_number
+entity_type: paragraph
+bundle: project_costs
+label: 'Cost number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0.0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,10 @@
+uuid: 0e436944-61e6-4679-850c-7f503d985cf6
+langcode: en
+status: true
+dependencies: {  }
+id: project_costs
+label: 'Project costs'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

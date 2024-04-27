@@ -1,0 +1,16 @@
+name: Icons Fontello
+type: module
+description: Icons Fontello Library Module
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+
+package: Icons
+dependencies:
+  - icons
+libraries:
+  - icons_fontello
+
+# Information added by Drupal.org packaging script on 2023-09-27
+version: '2.1.0'
+project: 'icons'
+datestamp: 1695804896
