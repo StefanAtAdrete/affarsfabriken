@@ -1,0 +1,24 @@
+uuid: a84daebe-6ba8-40f5-b96c-4fb773b300a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technology_requirements
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_technology_requirements
+field_name: field_technology_requirements
+entity_type: node
+bundle: project
+label: 'Technology Requirements'
+description: 'For essential technology needs. List technologies required.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -1,0 +1,22 @@
+uuid: 82fb4087-70cf-4c35-b7c8-1b60881176b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: d5RRR4sCguf9KoTb2urPQWdaepVzH5Vh3o0jIKsdkyg
+id: soundcombo_breadcrumbs
+theme: soundcombo
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

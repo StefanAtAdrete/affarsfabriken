@@ -1,0 +1,24 @@
+uuid: 1f99196c-1e91-4140-94ca-036c7818e16b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_financial_projections_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_financial_projections_text
+field_name: field_financial_projections_text
+entity_type: node
+bundle: project
+label: 'Financial Projections'
+description: 'For summary. Outline your financial projections.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

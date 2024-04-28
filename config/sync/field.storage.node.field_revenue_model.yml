@@ -1,0 +1,39 @@
+uuid: 83b9a34e-adbc-4198-8e6a-ee0fed2129a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_revenue_model
+field_name: field_revenue_model
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: subscription
+      label: Subscription
+    -
+      value: one_time_sale
+      label: 'One-time sale'
+    -
+      value: freemium
+      label: Freemium
+    -
+      value: advertisement
+      label: Advertisement
+    -
+      value: affiliate
+      label: Affiliate
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

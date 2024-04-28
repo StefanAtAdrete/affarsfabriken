@@ -1,0 +1,37 @@
+uuid: 53c170a5-fded-4f3a-8113-93718748a3b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_costs
+    - node.type.project
+    - paragraphs.paragraphs_type.project_costs
+  module:
+    - entity_reference_revisions
+id: node.project.field_costs
+field_name: field_costs
+entity_type: node
+bundle: project
+label: Costs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      project_costs: project_costs
+    negate: 0
+    target_bundles_drag_drop:
+      from_library:
+        weight: 2
+        enabled: false
+      project_costs:
+        weight: 5
+        enabled: true
+      text_link:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

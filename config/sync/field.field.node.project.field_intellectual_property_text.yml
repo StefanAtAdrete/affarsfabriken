@@ -1,0 +1,24 @@
+uuid: 229341ac-9dfd-47ca-9555-3901bf28d7d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intellectual_property_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_intellectual_property_text
+field_name: field_intellectual_property_text
+entity_type: node
+bundle: project
+label: 'Intellectual Property (IP)'
+description: 'Provide details on the IP.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

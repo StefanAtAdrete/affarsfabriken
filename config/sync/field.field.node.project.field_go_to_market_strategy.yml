@@ -1,0 +1,21 @@
+uuid: d92cffc7-e7ee-4cde-b486-921391831803
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_go_to_market_strategy
+    - node.type.project
+  module:
+    - options
+id: node.project.field_go_to_market_strategy
+field_name: field_go_to_market_strategy
+entity_type: node
+bundle: project
+label: 'Go-to-Market Strategy'
+description: 'Select primary strategies.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

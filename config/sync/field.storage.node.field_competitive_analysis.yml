@@ -1,0 +1,30 @@
+uuid: bfff9e12-1f4b-4339-b1d0-4474222e3e83
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_competitive_analysis
+field_name: field_competitive_analysis
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: direct_competitors
+      label: 'Direct competitors'
+    -
+      value: indirect_competitors
+      label: 'Indirect competitors'
+    -
+      value: emerging_competitors
+      label: 'Emerging competitors'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

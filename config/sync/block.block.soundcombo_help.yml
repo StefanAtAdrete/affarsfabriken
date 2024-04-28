@@ -1,0 +1,22 @@
+uuid: e321f3a3-e565-49b6-9547-11d508d5d224
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: xElHYdL6rClDeG7PN3u-sjvQ64QyDLt_XNScM0tHkAo
+id: soundcombo_help
+theme: soundcombo
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

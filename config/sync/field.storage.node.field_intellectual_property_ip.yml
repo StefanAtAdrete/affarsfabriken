@@ -1,0 +1,36 @@
+uuid: c014491c-dbef-45d6-90c1-2f2f3101404e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_intellectual_property_ip
+field_name: field_intellectual_property_ip
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: patents
+      label: Patents
+    -
+      value: trademarks
+      label: Trademarks
+    -
+      value: copyrights
+      label: Copyrights
+    -
+      value: trade_secrets
+      label: 'Trade Secrets'
+    -
+      value: none
+      label: None
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

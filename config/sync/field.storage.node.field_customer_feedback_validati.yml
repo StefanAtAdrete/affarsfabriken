@@ -1,0 +1,18 @@
+uuid: 0857be4b-a1f3-4c29-bc75-0c31f24c893c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_customer_feedback_validati
+field_name: field_customer_feedback_validati
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

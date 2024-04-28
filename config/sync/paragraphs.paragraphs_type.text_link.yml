@@ -1,0 +1,15 @@
+uuid: de8ea87e-c3fe-4de6-8840-e824ae10aa90
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: text_link
+label: Competitor
+icon_uuid: null
+icon_default: null
+description: 'Formatted text (no summary) + link'
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: c5b1ca86-f8e4-4906-b3d8-068d7bd61519
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_feedback_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_customer_feedback_text
+field_name: field_customer_feedback_text
+entity_type: node
+bundle: project
+label: 'Customer Feedback/Validation'
+description: 'Provide a brief summary if feedback exists.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

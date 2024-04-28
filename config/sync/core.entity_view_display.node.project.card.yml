@@ -1,0 +1,351 @@
+uuid: 292569f6-eb30-4c90-ac3b-48bc1d397b6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.project.title
+    - core.entity_view_mode.node.card
+    - field.field.node.project.field_competitive_analysis
+    - field.field.node.project.field_competitive_analysis_parag
+    - field.field.node.project.field_costs
+    - field.field.node.project.field_customer_feedback_text
+    - field.field.node.project.field_customer_feedback_validati
+    - field.field.node.project.field_financial_projections_text
+    - field.field.node.project.field_financial_summary
+    - field.field.node.project.field_funding_requirements
+    - field.field.node.project.field_funding_requirements_text
+    - field.field.node.project.field_go_to_market_strategy
+    - field.field.node.project.field_go_to_market_strategy_text
+    - field.field.node.project.field_intellectual_property_ip
+    - field.field.node.project.field_intellectual_property_text
+    - field.field.node.project.field_key_performance_indicators
+    - field.field.node.project.field_kpi_text
+    - field.field.node.project.field_legal_structure_and_compli
+    - field.field.node.project.field_legal_structure_comp_check
+    - field.field.node.project.field_log
+    - field.field.node.project.field_market_need
+    - field.field.node.project.field_marketing_strategy
+    - field.field.node.project.field_optional_files_finance
+    - field.field.node.project.field_product_service_descriptio
+    - field.field.node.project.field_public_project
+    - field.field.node.project.field_revenue_model
+    - field.field.node.project.field_revenue_model_text
+    - field.field.node.project.field_target_market
+    - field.field.node.project.field_target_market_text
+    - field.field.node.project.field_team_and_expertise
+    - field.field.node.project.field_technology_req_check
+    - field.field.node.project.field_technology_requirements
+    - field.field.node.project.field_unique_value_proposition
+    - node.type.project
+  module:
+    - entity_reference_revisions
+    - file
+    - layout_builder
+    - options
+    - text
+    - user
+  theme:
+    - bootstrap_barrio
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: barrio_cardbasic
+        layout_settings:
+          label: Card
+          context_mapping: {  }
+        components:
+          359f2d60-eb94-4fbc-9797-e49eedf5034d:
+            uuid: 359f2d60-eb94-4fbc-9797-e49eedf5034d
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_log'
+              label: Logotype
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: -1
+            additional: {  }
+          abd23885-cf60-4a12-b9ab-665f1f420e9c:
+            uuid: abd23885-cf60-4a12-b9ab-665f1f420e9c
+            region: first
+            configuration:
+              id: 'field_block:node:project:field_unique_value_proposition'
+              label: 'Unique Value Proposition (UVP)'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 200
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          f80fb7f3-d979-4b6c-913b-c09c3c6a4489:
+            uuid: f80fb7f3-d979-4b6c-913b-c09c3c6a4489
+            region: first
+            configuration:
+              id: 'field_block:node:project:title'
+              label: 'Project name'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: -2
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.card
+targetEntityType: node
+bundle: project
+mode: card
+content:
+  field_competitive_analysis:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_competitive_analysis_parag:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_costs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_customer_feedback_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  field_customer_feedback_validati:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  field_financial_projections_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_financial_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_funding_requirements:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_funding_requirements_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_go_to_market_strategy:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_go_to_market_strategy_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_intellectual_property_ip:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_intellectual_property_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  field_key_performance_indicators:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_kpi_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_legal_structure_and_compli:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_legal_structure_comp_check:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_log:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_market_need:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_marketing_strategy:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_optional_files_finance:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_product_service_descriptio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_revenue_model:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_revenue_model_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_target_market:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_target_market_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_team_and_expertise:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_technology_req_check:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_technology_requirements:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_unique_value_proposition:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_public_project: true

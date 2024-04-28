@@ -1,0 +1,82 @@
+uuid: 4acb693d-9079-41f9-826f-2e9a407f634e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.project.field_competitive_analysis
+    - field.field.node.project.field_competitive_analysis_parag
+    - field.field.node.project.field_costs
+    - field.field.node.project.field_customer_feedback_text
+    - field.field.node.project.field_customer_feedback_validati
+    - field.field.node.project.field_financial_projections_text
+    - field.field.node.project.field_financial_summary
+    - field.field.node.project.field_funding_requirements
+    - field.field.node.project.field_funding_requirements_text
+    - field.field.node.project.field_go_to_market_strategy
+    - field.field.node.project.field_go_to_market_strategy_text
+    - field.field.node.project.field_intellectual_property_ip
+    - field.field.node.project.field_intellectual_property_text
+    - field.field.node.project.field_key_performance_indicators
+    - field.field.node.project.field_kpi_text
+    - field.field.node.project.field_legal_structure_and_compli
+    - field.field.node.project.field_legal_structure_comp_check
+    - field.field.node.project.field_log
+    - field.field.node.project.field_market_need
+    - field.field.node.project.field_marketing_strategy
+    - field.field.node.project.field_optional_files_finance
+    - field.field.node.project.field_product_service_descriptio
+    - field.field.node.project.field_public_project
+    - field.field.node.project.field_revenue_model
+    - field.field.node.project.field_revenue_model_text
+    - field.field.node.project.field_target_market
+    - field.field.node.project.field_target_market_text
+    - field.field.node.project.field_team_and_expertise
+    - field.field.node.project.field_technology_req_check
+    - field.field.node.project.field_technology_requirements
+    - field.field.node.project.field_unique_value_proposition
+    - node.type.project
+  module:
+    - user
+id: node.project.teaser
+targetEntityType: node
+bundle: project
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_competitive_analysis: true
+  field_competitive_analysis_parag: true
+  field_costs: true
+  field_customer_feedback_text: true
+  field_customer_feedback_validati: true
+  field_financial_projections_text: true
+  field_financial_summary: true
+  field_funding_requirements: true
+  field_funding_requirements_text: true
+  field_go_to_market_strategy: true
+  field_go_to_market_strategy_text: true
+  field_intellectual_property_ip: true
+  field_intellectual_property_text: true
+  field_key_performance_indicators: true
+  field_kpi_text: true
+  field_legal_structure_and_compli: true
+  field_legal_structure_comp_check: true
+  field_log: true
+  field_market_need: true
+  field_marketing_strategy: true
+  field_optional_files_finance: true
+  field_product_service_descriptio: true
+  field_public_project: true
+  field_revenue_model: true
+  field_revenue_model_text: true
+  field_target_market: true
+  field_target_market_text: true
+  field_team_and_expertise: true
+  field_technology_req_check: true
+  field_technology_requirements: true
+  field_unique_value_proposition: true

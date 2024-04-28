@@ -1,0 +1,39 @@
+uuid: 6fb6b98d-3133-424a-92e9-9d36bd6bb982
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_go_to_market_strategy
+field_name: field_go_to_market_strategy
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: seo
+      label: SEO
+    -
+      value: social_media
+      label: 'Social Media'
+    -
+      value: email_marketing
+      label: 'Email Marketing'
+    -
+      value: partnerships
+      label: Partnerships
+    -
+      value: direct_sales
+      label: 'Direct Sales'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

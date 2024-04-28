@@ -1,0 +1,21 @@
+uuid: 8c8bc5b1-61e6-4186-8147-a59e265ceca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_competitive_analysis
+    - node.type.project
+  module:
+    - options
+id: node.project.field_competitive_analysis
+field_name: field_competitive_analysis
+entity_type: node
+bundle: project
+label: 'Competitive Analysis'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

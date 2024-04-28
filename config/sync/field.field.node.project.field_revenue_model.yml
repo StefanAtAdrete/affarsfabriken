@@ -1,0 +1,23 @@
+uuid: 183f7c3f-2e2e-481e-b30b-4a66288f60a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revenue_model
+    - node.type.project
+  module:
+    - options
+id: node.project.field_revenue_model
+field_name: field_revenue_model
+entity_type: node
+bundle: project
+label: 'Revenue Model'
+description: 'Choose the primary revenue model.'
+required: false
+translatable: false
+default_value:
+  -
+    value: one_time_sale
+default_value_callback: ''
+settings: {  }
+field_type: list_string

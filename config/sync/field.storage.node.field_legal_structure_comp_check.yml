@@ -1,0 +1,39 @@
+uuid: 4cc62422-dea0-45ec-b0ca-2f837b1eaecd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_legal_structure_comp_check
+field_name: field_legal_structure_comp_check
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: gdpr
+      label: 'GDPR (or likewise)'
+    -
+      value: data_safety_protocols
+      label: 'Data safety protocols'
+    -
+      value: sustainable_business_structure
+      label: 'Sustainable business structure'
+    -
+      value: legal_documentation
+      label: 'Legal documentation'
+    -
+      value: licenses
+      label: 'Licenses and registration'
+    -
+      value: vat_number
+      label: 'VAT number'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

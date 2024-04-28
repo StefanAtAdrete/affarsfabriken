@@ -1,0 +1,22 @@
+uuid: 1a6eae85-0110-4edb-a5d0-b74533e729b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: XGNCwTVqw0Frv1VFUGohlocMSXDpPcOaiH8D-xHYit4
+id: soundcombo_messages
+theme: soundcombo
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

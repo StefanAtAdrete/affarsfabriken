@@ -1,0 +1,23 @@
+uuid: f5847b30-4478-4d57-b4c2-795e0db4b823
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_market
+    - node.type.project
+  module:
+    - options
+id: node.project.field_target_market
+field_name: field_target_market
+entity_type: node
+bundle: project
+label: 'Target Market'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: b2c
+default_value_callback: ''
+settings: {  }
+field_type: list_string

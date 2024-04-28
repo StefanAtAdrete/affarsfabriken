@@ -1,0 +1,20 @@
+uuid: 10ad915a-b74f-48cf-bd49-84d773fb5f4a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: xJpJsZ-THNRxCglZb2fsD_kcQY4ozDzxl892B5L-1bM
+id: soundcombo_primary_admin_actions
+theme: soundcombo
+region: content
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

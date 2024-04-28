@@ -1,0 +1,21 @@
+uuid: 958126fc-9ec1-4c73-81fa-94d5157eca76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_structure_comp_check
+    - node.type.project
+  module:
+    - options
+id: node.project.field_legal_structure_comp_check
+field_name: field_legal_structure_comp_check
+entity_type: node
+bundle: project
+label: 'Legal Structure and Compliance'
+description: 'Regulatory compliance relevant to the industry.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

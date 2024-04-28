@@ -1,0 +1,24 @@
+uuid: d8d16a30-0377-423c-a341-9ecd792f36e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_go_to_market_strategy_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_go_to_market_strategy_text
+field_name: field_go_to_market_strategy_text
+entity_type: node
+bundle: project
+label: 'Go-to-Market Strategy'
+description: 'Specify additional strategies.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

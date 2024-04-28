@@ -1,0 +1,31 @@
+uuid: f929e1c6-7fbf-4423-a230-5ce10fa9967d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.project_costs.field_cost_number_int
+    - field.field.paragraph.project_costs.field_product_service_name
+    - paragraphs.paragraphs_type.project_costs
+id: paragraph.project_costs.default
+targetEntityType: paragraph
+bundle: project_costs
+mode: default
+content:
+  field_cost_number_int:
+    type: number
+    weight: 2
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_product_service_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

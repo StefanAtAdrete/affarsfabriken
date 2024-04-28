@@ -1,0 +1,30 @@
+uuid: f26c82cc-8bc7-4226-8fd9-6fa862b62984
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_target_market
+field_name: field_target_market
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: b2b
+      label: B2B
+    -
+      value: b2c
+      label: B2C
+    -
+      value: b2b_and_b2c
+      label: 'B2B and B2C'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

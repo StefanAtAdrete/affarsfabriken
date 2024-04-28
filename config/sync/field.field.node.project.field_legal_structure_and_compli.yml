@@ -1,0 +1,21 @@
+uuid: 20676aae-e6e4-4d28-be4c-344f24f26509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_structure_and_compli
+    - node.type.project
+  module:
+    - options
+id: node.project.field_legal_structure_and_compli
+field_name: field_legal_structure_and_compli
+entity_type: node
+bundle: project
+label: 'Legal Structure and Compliance'
+description: 'Select your business structure.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

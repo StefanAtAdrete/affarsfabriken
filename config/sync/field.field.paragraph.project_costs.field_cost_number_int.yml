@@ -1,0 +1,23 @@
+uuid: 2ab7986b-4688-4e3f-9bb4-9903c383cc30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cost_number_int
+    - paragraphs.paragraphs_type.project_costs
+id: paragraph.project_costs.field_cost_number_int
+field_name: field_cost_number_int
+entity_type: paragraph
+bundle: project_costs
+label: 'Initial costs per year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

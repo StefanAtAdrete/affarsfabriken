@@ -68,6 +68,8 @@ class BootstrapTable extends Table {
         'show-print' => TRUE,
         'show-export' => TRUE,
         'filter-control' => FALSE,
+        'advanced-search' => FALSE,
+        'mobile-responsive' => FALSE,
         'group-by' => FALSE,
         'show-multi-sort' => FALSE,
         'show-jump-to' => FALSE,
@@ -210,7 +212,7 @@ class BootstrapTable extends Table {
     $form['extension']['show-copy-rows'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Copy Rows'),
-      '#description' => $this->t("See the <a href='@exemple'>Copy Rows for copying selected rows to the clipboard</a> for details on how to use this feature", ['@exemple' => 'https://examples.bootstrap-table.com/index.html#extensions/copy-rows.html']),
+      '#description' => $this->t("See the <a href='@exemple'>Copy Rows for copying selected rows to the clipboard</a>, use for VBO", ['@exemple' => 'https://examples.bootstrap-table.com/index.html#extensions/copy-rows.html']),
       '#default_value' => $this->options['extension']['show-copy-rows'] ?? FALSE,
     ];
 
@@ -232,6 +234,18 @@ class BootstrapTable extends Table {
       '#title' => $this->t('Filter Control'),
       '#description' => $this->t("See the <a href='@exemple'>Filter Control</a> for details on how to use this feature", ['@exemple' => 'https://examples.bootstrap-table.com/index.html#extensions/filter-control.html']),
       '#default_value' => $this->options['extension']['filter-control'] ?? FALSE,
+    ];
+    $form['extension']['advanced-search'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Advanced search'),
+      '#description' => $this->t("See the <a href='@exemple'>Advanced search</a>, modal to allow the advanced search", ['@exemple' => 'https://examples.bootstrap-table.com/#extensions/toolbar.html']),
+      '#default_value' => $this->options['extension']['advanced-search'] ?? FALSE,
+    ];
+    $form['extension']['mobile-responsive'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Mobile'),
+      '#description' => $this->t("See the <a href='@exemple'>Mobile</a> to change the view between card and table view", ['@exemple' => 'https://examples.bootstrap-table.com/#extensions/mobile.html']),
+      '#default_value' => $this->options['extension']['mobile-responsive'] ?? FALSE,
     ];
     $form['extension']['group-by'] = [
       '#type' => 'checkbox',
@@ -266,7 +280,7 @@ class BootstrapTable extends Table {
       '#description' => $this->t("See the <a href='@exemple'>Resizable</a> for details on how to use this feature", ['@exemple' => 'https://examples.bootstrap-table.com/index.html#extensions/resizable.html']),
       '#default_value' => $this->options['extension']['resizable'] ?? FALSE,
     ];
-    $form['extension']['resizable']['#description'] .= "Don't use 'cos jquery-resizable-columns lib is not working with Bootstrap Table, wait until fixed";
+    $form['extension']['resizable']['#description'] .= " Don't use 'cos jquery-resizable-columns lib is not working with Bootstrap Table, wait until fixed";
 
     $form['extension']['sticky_header'] = [
       '#type' => 'checkbox',
@@ -406,6 +420,7 @@ class BootstrapTable extends Table {
         'number_decimal',
         'bigint_item_default',
         'list_default',
+        'commerce_price_default',
       ])) {
         $optionField[$field_name] = $labels[$field_name];
       }

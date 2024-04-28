@@ -1,0 +1,24 @@
+uuid: c72479c1-7e64-48a5-98ab-8e43bcc223f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_revenue_model_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_revenue_model_text
+field_name: field_revenue_model_text
+entity_type: node
+bundle: project
+label: 'Revenue Model'
+description: 'If "Other" is chosen, please describe your revenue model.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

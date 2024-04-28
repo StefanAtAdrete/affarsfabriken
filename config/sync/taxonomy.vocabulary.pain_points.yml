@@ -1,0 +1,8 @@
+uuid: efee01f5-b3f6-41d1-a6af-dcdf8227b0c1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Pain points'
+vid: pain_points
+description: 'Industry pain points'
+weight: 0

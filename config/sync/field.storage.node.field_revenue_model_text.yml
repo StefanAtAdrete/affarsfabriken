@@ -1,0 +1,19 @@
+uuid: 307e2ada-a4ca-4ef0-9659-6c60849c5f87
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_revenue_model_text
+field_name: field_revenue_model_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

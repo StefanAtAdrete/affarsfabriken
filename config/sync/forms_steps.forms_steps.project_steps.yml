@@ -1,0 +1,37 @@
+uuid: 4bc3cb05-6fdd-4825-a6f4-1e061e0ab080
+langcode: en
+status: true
+dependencies: {  }
+id: project_steps
+label: 'Project steps'
+description: ''
+progress_steps_links_saved_only: false
+progress_steps_links_saved_only_next: false
+redirection_policy: ''
+redirection_target: ''
+steps:
+  step_1:
+    label: 'Step 1'
+    weight: 0
+    entity_type: node
+    entity_bundle: project
+    form_mode: node.project_steps
+    url: /project/step1
+    submitLabel: ''
+    cancelLabel: ''
+    hideDelete: 0
+    deleteLabel: null
+    displayPrevious: 0
+  step_2:
+    label: 'Step 2'
+    weight: 1
+    entity_type: node
+    entity_bundle: project
+    form_mode: node.step_2
+    url: /project/step2
+    submitLabel: ''
+    cancelLabel: ''
+    hideDelete: 0
+    deleteLabel: null
+    displayPrevious: 0
+progress_steps: {  }

@@ -1,0 +1,789 @@
+uuid: ee407495-9b34-4631-8bcc-a78b6d031166
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project.field_competitive_analysis
+    - field.field.node.project.field_competitive_analysis_parag
+    - field.field.node.project.field_costs
+    - field.field.node.project.field_customer_feedback_text
+    - field.field.node.project.field_customer_feedback_validati
+    - field.field.node.project.field_financial_projections_text
+    - field.field.node.project.field_financial_summary
+    - field.field.node.project.field_funding_requirements
+    - field.field.node.project.field_funding_requirements_text
+    - field.field.node.project.field_go_to_market_strategy
+    - field.field.node.project.field_go_to_market_strategy_text
+    - field.field.node.project.field_intellectual_property_ip
+    - field.field.node.project.field_intellectual_property_text
+    - field.field.node.project.field_key_performance_indicators
+    - field.field.node.project.field_kpi_text
+    - field.field.node.project.field_legal_structure_and_compli
+    - field.field.node.project.field_legal_structure_comp_check
+    - field.field.node.project.field_log
+    - field.field.node.project.field_market_need
+    - field.field.node.project.field_marketing_strategy
+    - field.field.node.project.field_optional_files_finance
+    - field.field.node.project.field_product_service_descriptio
+    - field.field.node.project.field_public_project
+    - field.field.node.project.field_revenue_model
+    - field.field.node.project.field_revenue_model_text
+    - field.field.node.project.field_target_market
+    - field.field.node.project.field_target_market_text
+    - field.field.node.project.field_team_and_expertise
+    - field.field.node.project.field_technology_req_check
+    - field.field.node.project.field_technology_requirements
+    - field.field.node.project.field_unique_value_proposition
+    - node.type.project
+  module:
+    - entity_reference_revisions
+    - file
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          1f1021be-ecd6-4bef-9888-e6cb8b054462:
+            uuid: 1f1021be-ecd6-4bef-9888-e6cb8b054462
+            region: content
+            configuration:
+              id: 'extra_field_block:node:project:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          4c8e5418-38c3-4eb2-ba59-3ce073be0985:
+            uuid: 4c8e5418-38c3-4eb2-ba59-3ce073be0985
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_log'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          ed0fc7b6-61cf-4254-84cd-59674bfd7d7c:
+            uuid: ed0fc7b6-61cf-4254-84cd-59674bfd7d7c
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_marketing_strategy'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          f2d98fac-e2ba-4be8-9c6e-013fe92dea78:
+            uuid: f2d98fac-e2ba-4be8-9c6e-013fe92dea78
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_financial_summary'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          0112708b-d90a-4d51-ab02-38f96063c997:
+            uuid: 0112708b-d90a-4d51-ab02-38f96063c997
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_costs'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 8
+            additional: {  }
+          a919c143-e0f8-494f-80dd-20fbac92569c:
+            uuid: a919c143-e0f8-494f-80dd-20fbac92569c
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_unique_value_proposition'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 9
+            additional: {  }
+          5abdc2bd-f537-4a00-8ec0-6faf9be56125:
+            uuid: 5abdc2bd-f537-4a00-8ec0-6faf9be56125
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_target_market'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 10
+            additional: {  }
+          7f798991-db8e-47e6-8d6f-ca1812032558:
+            uuid: 7f798991-db8e-47e6-8d6f-ca1812032558
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_target_market_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 11
+            additional: {  }
+          2acf68dd-1243-401f-8eb7-643efed72d12:
+            uuid: 2acf68dd-1243-401f-8eb7-643efed72d12
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_competitive_analysis'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 12
+            additional: {  }
+          37bbeb50-1f6e-4b91-93df-696847437039:
+            uuid: 37bbeb50-1f6e-4b91-93df-696847437039
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_competitive_analysis_parag'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 13
+            additional: {  }
+          849a31a9-278e-470f-85a7-df1bd12dcd2d:
+            uuid: 849a31a9-278e-470f-85a7-df1bd12dcd2d
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_revenue_model'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 14
+            additional: {  }
+          cc050d8a-91e8-438c-92ec-e17a2b05c941:
+            uuid: cc050d8a-91e8-438c-92ec-e17a2b05c941
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_revenue_model_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 15
+            additional: {  }
+          d4cfeffc-88de-4b5b-8e1d-3e474a9523eb:
+            uuid: d4cfeffc-88de-4b5b-8e1d-3e474a9523eb
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_product_service_descriptio'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 16
+            additional: {  }
+          16b0d284-3c44-439e-ba55-d63d7148921d:
+            uuid: 16b0d284-3c44-439e-ba55-d63d7148921d
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_market_need'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 17
+            additional: {  }
+          56de88ce-ae78-4842-a206-5ce6cdb9fce6:
+            uuid: 56de88ce-ae78-4842-a206-5ce6cdb9fce6
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_go_to_market_strategy'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 18
+            additional: {  }
+          0a369df3-2e2e-4c42-8bfe-b4fe57d036a6:
+            uuid: 0a369df3-2e2e-4c42-8bfe-b4fe57d036a6
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_go_to_market_strategy_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 19
+            additional: {  }
+          6ab27ecc-8573-4b44-92b3-d84ab19ecfde:
+            uuid: 6ab27ecc-8573-4b44-92b3-d84ab19ecfde
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_key_performance_indicators'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 20
+            additional: {  }
+          8b5984b2-b561-4c14-8b90-17fd2eaf356f:
+            uuid: 8b5984b2-b561-4c14-8b90-17fd2eaf356f
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_kpi_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 21
+            additional: {  }
+          6c41c6c3-efd7-4252-8ebf-e6d105a2dcf4:
+            uuid: 6c41c6c3-efd7-4252-8ebf-e6d105a2dcf4
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_team_and_expertise'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 22
+            additional: {  }
+          b376fe0a-843f-4dde-a593-359f42eab511:
+            uuid: b376fe0a-843f-4dde-a593-359f42eab511
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_financial_projections_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 23
+            additional: {  }
+          06c5e4fc-6ac8-46ea-b9c7-8c85d5333112:
+            uuid: 06c5e4fc-6ac8-46ea-b9c7-8c85d5333112
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_optional_files_finance'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: file_default
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 24
+            additional: {  }
+          7d8ad218-a9a4-4c18-b476-525d6489124a:
+            uuid: 7d8ad218-a9a4-4c18-b476-525d6489124a
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_funding_requirements'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: number_integer
+                label: above
+                settings:
+                  thousand_separator: ''
+                  prefix_suffix: true
+                third_party_settings: {  }
+            weight: 25
+            additional: {  }
+          4a91cf5d-4b95-4bea-a605-4dc6eb6fae6b:
+            uuid: 4a91cf5d-4b95-4bea-a605-4dc6eb6fae6b
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_funding_requirements_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 26
+            additional: {  }
+          06a74f39-9162-49ee-9c3e-3bd3b0d01857:
+            uuid: 06a74f39-9162-49ee-9c3e-3bd3b0d01857
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_legal_structure_and_compli'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 27
+            additional: {  }
+          3cbaafb7-0164-473e-a457-bbdae609daa8:
+            uuid: 3cbaafb7-0164-473e-a457-bbdae609daa8
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_legal_structure_comp_check'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 28
+            additional: {  }
+          ebd3cbcb-0707-480d-a350-d13e9fb3a28f:
+            uuid: ebd3cbcb-0707-480d-a350-d13e9fb3a28f
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_technology_requirements'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 29
+            additional: {  }
+          75f4bfe8-9809-4630-b29d-905b7a13b993:
+            uuid: 75f4bfe8-9809-4630-b29d-905b7a13b993
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_technology_req_check'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 30
+            additional: {  }
+          439d88d3-3d58-4a3b-a381-c3f18fb83a0e:
+            uuid: 439d88d3-3d58-4a3b-a381-c3f18fb83a0e
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_intellectual_property_ip'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 31
+            additional: {  }
+          7ed4625b-1327-41d5-add5-59ee6f0d1481:
+            uuid: 7ed4625b-1327-41d5-add5-59ee6f0d1481
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_intellectual_property_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 32
+            additional: {  }
+          3b94a653-3157-4051-ab6c-79e791f3ba1b:
+            uuid: 3b94a653-3157-4051-ab6c-79e791f3ba1b
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_customer_feedback_validati'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 33
+            additional: {  }
+          51f280e1-e70c-4f92-9a86-0fdffc4f8b33:
+            uuid: 51f280e1-e70c-4f92-9a86-0fdffc4f8b33
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_customer_feedback_text'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 34
+            additional: {  }
+          1502635e-1010-4135-8785-6de1674196a1:
+            uuid: 1502635e-1010-4135-8785-6de1674196a1
+            region: content
+            configuration:
+              id: 'field_block:node:project:field_public_project'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: boolean
+                label: above
+                settings:
+                  format: default
+                  format_custom_false: ''
+                  format_custom_true: ''
+                third_party_settings: {  }
+            weight: 35
+            additional: {  }
+        third_party_settings: {  }
+id: node.project.default
+targetEntityType: node
+bundle: project
+mode: default
+content:
+  field_competitive_analysis:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_competitive_analysis_parag:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_costs:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_customer_feedback_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 34
+    region: content
+  field_customer_feedback_validati:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 33
+    region: content
+  field_financial_projections_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_financial_summary:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_funding_requirements:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_funding_requirements_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_go_to_market_strategy:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_go_to_market_strategy_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_intellectual_property_ip:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_intellectual_property_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 32
+    region: content
+  field_key_performance_indicators:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_kpi_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_legal_structure_and_compli:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 27
+    region: content
+  field_legal_structure_comp_check:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 28
+    region: content
+  field_log:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_market_need:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_marketing_strategy:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_optional_files_finance:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_product_service_descriptio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_public_project:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 35
+    region: content
+  field_revenue_model:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_revenue_model_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 15
+    region: content
+  field_target_market:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_target_market_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_team_and_expertise:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_technology_req_check:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_technology_requirements:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 29
+    region: content
+  field_unique_value_proposition:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

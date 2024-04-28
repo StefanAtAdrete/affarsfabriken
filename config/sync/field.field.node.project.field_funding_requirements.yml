@@ -1,0 +1,23 @@
+uuid: 38164eb3-3397-401f-b6ad-99766a79da29
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_funding_requirements
+    - node.type.project
+id: node.project.field_funding_requirements
+field_name: field_funding_requirements
+entity_type: node
+bundle: project
+label: 'Funding Requirements'
+description: 'For amount needed. Enter the required investment amount.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: $
+  suffix: ''
+field_type: integer

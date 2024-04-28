@@ -1,0 +1,24 @@
+uuid: 6b9debb9-e5f2-4877-9fbe-517f615153ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_financial_summary
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_financial_summary
+field_name: field_financial_summary
+entity_type: node
+bundle: project
+label: 'Financial summary'
+description: 'What is needed to be able to start up this business? What is the expansion plans and ownership? Write a comprehensive text about all things financial about the business. This is the most important thing.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

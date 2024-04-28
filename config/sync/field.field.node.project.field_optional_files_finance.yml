@@ -1,0 +1,27 @@
+uuid: 5dc1f366-3591-42fd-b17d-cfff45b11dc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_optional_files_finance
+    - node.type.project
+  module:
+    - file
+id: node.project.field_optional_files_finance
+field_name: field_optional_files_finance
+entity_type: node
+bundle: project
+label: 'Optional files (financial projections)'
+description: 'For detailed projections. Upload documents if available.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt doc docx pdf odt'
+  max_filesize: '10 MB'
+  description_field: true
+field_type: file

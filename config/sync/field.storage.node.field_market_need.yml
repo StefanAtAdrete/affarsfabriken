@@ -1,0 +1,19 @@
+uuid: 3e79fae1-749d-4cec-a0ea-1b13b5f835bb
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_market_need
+field_name: field_market_need
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

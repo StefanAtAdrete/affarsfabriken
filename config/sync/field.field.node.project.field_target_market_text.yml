@@ -1,0 +1,26 @@
+uuid: d0b09926-b08c-4187-a0db-3aae7951fbd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_target_market_text
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - node.type.project
+  module:
+    - text
+id: node.project.field_target_market_text
+field_name: field_target_market_text
+entity_type: node
+bundle: project
+label: 'Target Market'
+description: 'For specifics (e.g., demographics, interests). Provide more detail about your target market.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

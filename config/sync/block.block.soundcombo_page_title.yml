@@ -1,0 +1,20 @@
+uuid: bc53d898-0832-440d-925b-5d630d01efc6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: '-vdxmyF9pYgsnWtX0lwpITjJgfdrP_x6T65b-hT2FLg'
+id: soundcombo_page_title
+theme: soundcombo
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

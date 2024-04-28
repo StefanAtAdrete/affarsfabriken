@@ -1,0 +1,23 @@
+uuid: b1d37573-9a78-473f-82c1-3f76519c8d33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_customer_feedback_validati
+    - node.type.project
+id: node.project.field_customer_feedback_validati
+field_name: field_customer_feedback_validati
+entity_type: node
+bundle: project
+label: 'Customer Feedback/Validation'
+description: 'Confirm if feedback or market validation exists.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

@@ -1,0 +1,39 @@
+uuid: 35a71422-e351-47b3-903e-9c0535924e6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_key_performance_indicators
+field_name: field_key_performance_indicators
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: user_growth
+      label: 'User Growth'
+    -
+      value: revenue
+      label: Revenue
+    -
+      value: customer_acquisition_cost_cac
+      label: 'Customer Acquisition Cost (CAC)'
+    -
+      value: customer_lifetime_value_clv
+      label: 'Customer Lifetime Value (CLV)'
+    -
+      value: retention_rate
+      label: 'Retention Rate'
+    -
+      value: other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

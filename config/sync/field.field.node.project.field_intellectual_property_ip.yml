@@ -1,0 +1,21 @@
+uuid: a8910adb-e9e4-4ed5-8bd7-ac98a1a09f23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intellectual_property_ip
+    - node.type.project
+  module:
+    - options
+id: node.project.field_intellectual_property_ip
+field_name: field_intellectual_property_ip
+entity_type: node
+bundle: project
+label: 'Intellectual Property (IP)'
+description: 'Mark applicable IP rights.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

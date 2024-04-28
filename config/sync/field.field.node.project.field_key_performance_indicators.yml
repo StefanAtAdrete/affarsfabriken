@@ -1,0 +1,21 @@
+uuid: bef67bf0-a45b-4cdd-800b-0420badc3c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key_performance_indicators
+    - node.type.project
+  module:
+    - options
+id: node.project.field_key_performance_indicators
+field_name: field_key_performance_indicators
+entity_type: node
+bundle: project
+label: 'Key Performance Indicators (KPIs)'
+description: 'Check relevant KPIs.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

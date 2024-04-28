@@ -1,0 +1,22 @@
+uuid: 356f6d40-610e-4a91-9681-95e7aace4af1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: cBMF1Yr7bqVVP-72Z0F4GxUPfomi9E1IU-NU_uec1ME
+id: soundcombo_powered
+theme: soundcombo
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

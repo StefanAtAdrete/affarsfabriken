@@ -1,0 +1,488 @@
+uuid: 31333eb2-6d1e-4dec-bbb5-7be0c23603b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.node.step_2
+    - field.field.node.project.field_competitive_analysis
+    - field.field.node.project.field_competitive_analysis_parag
+    - field.field.node.project.field_costs
+    - field.field.node.project.field_customer_feedback_text
+    - field.field.node.project.field_customer_feedback_validati
+    - field.field.node.project.field_financial_projections_text
+    - field.field.node.project.field_financial_summary
+    - field.field.node.project.field_funding_requirements
+    - field.field.node.project.field_funding_requirements_text
+    - field.field.node.project.field_go_to_market_strategy
+    - field.field.node.project.field_go_to_market_strategy_text
+    - field.field.node.project.field_intellectual_property_ip
+    - field.field.node.project.field_intellectual_property_text
+    - field.field.node.project.field_key_performance_indicators
+    - field.field.node.project.field_kpi_text
+    - field.field.node.project.field_legal_structure_and_compli
+    - field.field.node.project.field_legal_structure_comp_check
+    - field.field.node.project.field_log
+    - field.field.node.project.field_market_need
+    - field.field.node.project.field_marketing_strategy
+    - field.field.node.project.field_optional_files_finance
+    - field.field.node.project.field_product_service_descriptio
+    - field.field.node.project.field_public_project
+    - field.field.node.project.field_revenue_model
+    - field.field.node.project.field_revenue_model_text
+    - field.field.node.project.field_target_market
+    - field.field.node.project.field_target_market_text
+    - field.field.node.project.field_team_and_expertise
+    - field.field.node.project.field_technology_req_check
+    - field.field.node.project.field_technology_requirements
+    - field.field.node.project.field_unique_value_proposition
+    - node.type.project
+  module:
+    - conditional_fields
+    - field_group
+    - file
+    - paragraphs
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_market_research
+        - group_finance
+        - group_marketing
+        - group_routines_and_feedback
+      label: Tabs
+      region: content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: project_tabs
+        direction: horizontal
+        width_breakpoint: 640
+    group_project_summary:
+      children:
+        - title
+        - field_unique_value_proposition
+        - field_product_service_descriptio
+        - field_log
+        - field_technology_req_check
+        - field_technology_requirements
+        - field_team_and_expertise
+        - field_intellectual_property_ip
+        - field_intellectual_property_text
+        - field_legal_structure_comp_check
+        - field_legal_structure_and_compli
+      label: 'Project summary'
+      region: hidden
+      parent_name: ''
+      weight: 9
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: summary_step
+        formatter: open
+        description: ''
+        required_fields: true
+    group_market_research:
+      children:
+        - field_market_need
+        - field_target_market
+        - field_target_market_text
+        - field_competitive_analysis
+        - field_competitive_analysis_parag
+      label: 'Market research'
+      region: content
+      parent_name: group_tabs
+      weight: 14
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: market_step
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_marketing:
+      children:
+        - field_go_to_market_strategy
+        - field_go_to_market_strategy_text
+        - field_marketing_strategy
+      label: Marketing
+      region: content
+      parent_name: group_tabs
+      weight: 16
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: marketing_step
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_finance:
+      children:
+        - field_revenue_model
+        - field_revenue_model_text
+        - field_financial_summary
+        - field_costs
+        - field_financial_projections_text
+        - field_funding_requirements
+        - field_funding_requirements_text
+        - field_optional_files_finance
+      label: Finance
+      region: content
+      parent_name: group_tabs
+      weight: 15
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: financial_step
+        formatter: closed
+        description: ''
+        required_fields: true
+    group_routines_and_feedback:
+      children:
+        - field_key_performance_indicators
+        - field_kpi_text
+        - field_customer_feedback_validati
+        - field_customer_feedback_text
+      label: 'Routines and feedback'
+      region: content
+      parent_name: group_tabs
+      weight: 17
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: monitoring_step
+        formatter: closed
+        description: 'How will the business growth be monitored and measured? How will customer service work? Delivery and handling time?'
+        required_fields: true
+    group_fieldset:
+      children: {  }
+      label: Fieldset
+      region: hidden
+      parent_name: ''
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: true
+        id: ''
+        description: ''
+        required_fields: true
+id: node.project.step_2
+targetEntityType: node
+bundle: project
+mode: step_2
+content:
+  created:
+    type: datetime_timestamp
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_competitive_analysis:
+    type: options_buttons
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_competitive_analysis_parag:
+    type: paragraphs
+    weight: 16
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_costs:
+    type: paragraphs
+    weight: 29
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_customer_feedback_text:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        44fe4658-5780-4025-9f6c-4aa2bf0ac3f6:
+          entity_type: node
+          bundle: project
+          dependee: field_customer_feedback_validati
+          settings:
+            state: visible
+            reset: false
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: 1
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_customer_feedback_validati:
+    type: boolean_checkbox
+    weight: 9
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_financial_projections_text:
+    type: text_textarea
+    weight: 30
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_financial_summary:
+    type: text_textarea
+    weight: 28
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_funding_requirements:
+    type: number
+    weight: 31
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_funding_requirements_text:
+    type: text_textarea
+    weight: 32
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_go_to_market_strategy:
+    type: options_select
+    weight: 18
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_go_to_market_strategy_text:
+    type: text_textarea
+    weight: 20
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        8f72d210-d11e-4610-b11f-03b8d41182b4:
+          entity_type: node
+          bundle: project
+          dependee: field_go_to_market_strategy
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: other
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_key_performance_indicators:
+    type: options_buttons
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_kpi_text:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        6ef0508e-e21d-4cd2-b953-4554b355d1d9:
+          entity_type: node
+          bundle: project
+          dependee: field_key_performance_indicators
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: other
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_market_need:
+    type: text_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_marketing_strategy:
+    type: text_textarea
+    weight: 21
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_optional_files_finance:
+    type: file_generic
+    weight: 33
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_public_project:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_revenue_model:
+    type: options_select
+    weight: 26
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_revenue_model_text:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        e2e5d35e-363d-4c60-813a-c70aec6fda5a:
+          entity_type: node
+          bundle: project
+          dependee: field_revenue_model
+          settings:
+            state: visible
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: other
+            effect: show
+            effect_options: {  }
+            selector: ''
+  field_target_market:
+    type: options_select
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_target_market_text:
+    type: text_textarea
+    weight: 14
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings:
+      conditional_fields: {  }
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 6
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  field_intellectual_property_ip: true
+  field_intellectual_property_text: true
+  field_legal_structure_and_compli: true
+  field_legal_structure_comp_check: true
+  field_log: true
+  field_product_service_descriptio: true
+  field_team_and_expertise: true
+  field_technology_req_check: true
+  field_technology_requirements: true
+  field_unique_value_proposition: true
+  title: true

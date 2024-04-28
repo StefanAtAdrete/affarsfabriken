@@ -1,0 +1,24 @@
+uuid: 690a1851-fd10-456f-93ff-3c11f8ac6f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_market_need
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_market_need
+field_name: field_market_need
+entity_type: node
+bundle: project
+label: 'Market Need'
+description: 'Explain the problem or need your business addresses.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

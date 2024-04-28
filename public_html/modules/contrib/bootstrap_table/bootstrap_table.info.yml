@@ -2,11 +2,11 @@ name: Views Bootstrap table
 type: module
 description: Views bootstrap table
 package: Views
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^9 || ^10 || ^11
 dependencies:
   - drupal:views
 
-# Information added by Drupal.org packaging script on 2024-01-15
-version: '1.0.5'
+# Information added by Drupal.org packaging script on 2024-04-14
+version: '1.0.8'
 project: 'bootstrap_table'
-datestamp: 1705343929
+datestamp: 1713132505

@@ -1,0 +1,8 @@
+uuid: 36bcecaa-1b11-4236-bf53-ee5e2b36f98f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Market research techniques'
+vid: market_research_techniques
+description: ''
+weight: 0

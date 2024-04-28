@@ -2,7 +2,7 @@
   "name": "drupal/bootstrap_table",
   "description": "This simple views module easy integrate library bootstrap-table and almost extensions",
   "type": "drupal-module",
-  "minimum-stability": "stable",
+  "keywords": ["Drupal", "views", "bootstrap", "table"],
   "homepage": "https://www.drupal.org/project/bootstrap_table",
   "support": {
     "issues": "https://www.drupal.org/project/issues/bootstrap_table",
@@ -16,8 +16,5 @@
       "homepage": "https://www.drupal.org/u/lazzyvn",
       "role": "Maintainer"
     }
-  ],
-  "require": {
-    "drupal/core": "^9 || ^10"
-  }
+  ]
 }

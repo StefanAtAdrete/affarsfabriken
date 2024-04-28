@@ -1,0 +1,19 @@
+uuid: 97e5b7b8-3f25-4a0c-8a72-d1a4689b1bf5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_team_and_expertise
+field_name: field_team_and_expertise
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

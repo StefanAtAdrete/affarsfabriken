@@ -1,0 +1,22 @@
+uuid: dd883589-842f-4b97-92ad-d33d97615993
+langcode: en
+status: true
+dependencies:
+  theme:
+    - soundcombo
+_core:
+  default_config_hash: SfiAuOm4xu64DrAGJJVifozpV1_lTcn6Z25CagJuenU
+id: soundcombo_primary_local_tasks
+theme: soundcombo
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
